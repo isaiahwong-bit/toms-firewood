@@ -21,11 +21,15 @@
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#products" class="nav-link">Firewood</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
+
         <li><a href="#delivery" class="nav-link">Delivery Areas</a></li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="nav-cart" id="nav-cart" type="button" aria-label="View order">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
       <a href="#contact" class="nav-cta">Order Now</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
         <span></span>
@@ -167,7 +171,24 @@
                 </div>
               </div>
             </div>
-            <a href="#contact" class="btn btn-primary btn-full">Order Redgum</a>
+            <div class="cart-add-controls" data-product="Redgum">
+              <div class="cart-size-select">
+                <label>Size:</label>
+                <select class="cart-size">
+                  <option value="Small Load (~250kg)|180">Small — $180</option>
+                  <option value="Standard Load (~500kg)|330" selected>Standard — $330</option>
+                  <option value="Large Load (~1 tonne)|600">Large — $600</option>
+                </select>
+              </div>
+              <div class="cart-qty-row">
+                <div class="qty-control">
+                  <button class="qty-btn qty-minus" type="button">−</button>
+                  <input type="number" class="qty-input" value="1" min="1" max="10">
+                  <button class="qty-btn qty-plus" type="button">+</button>
+                </div>
+                <button class="btn btn-primary btn-add-cart" type="button">Add to Order</button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -212,7 +233,24 @@
                 </div>
               </div>
             </div>
-            <a href="#contact" class="btn btn-primary btn-full">Order Ironbark</a>
+            <div class="cart-add-controls" data-product="Ironbark">
+              <div class="cart-size-select">
+                <label>Size:</label>
+                <select class="cart-size">
+                  <option value="Small Load (~250kg)|200">Small — $200</option>
+                  <option value="Standard Load (~500kg)|360" selected>Standard — $360</option>
+                  <option value="Large Load (~1 tonne)|650">Large — $650</option>
+                </select>
+              </div>
+              <div class="cart-qty-row">
+                <div class="qty-control">
+                  <button class="qty-btn qty-minus" type="button">−</button>
+                  <input type="number" class="qty-input" value="1" min="1" max="10">
+                  <button class="qty-btn qty-plus" type="button">+</button>
+                </div>
+                <button class="btn btn-primary btn-add-cart" type="button">Add to Order</button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -257,7 +295,24 @@
                 </div>
               </div>
             </div>
-            <a href="#contact" class="btn btn-primary btn-full">Order Mixed</a>
+            <div class="cart-add-controls" data-product="Mixed Hardwood">
+              <div class="cart-size-select">
+                <label>Size:</label>
+                <select class="cart-size">
+                  <option value="Small Load (~250kg)|150">Small — $150</option>
+                  <option value="Standard Load (~500kg)|270" selected>Standard — $270</option>
+                  <option value="Large Load (~1 tonne)|480">Large — $480</option>
+                </select>
+              </div>
+              <div class="cart-qty-row">
+                <div class="qty-control">
+                  <button class="qty-btn qty-minus" type="button">−</button>
+                  <input type="number" class="qty-input" value="1" min="1" max="10">
+                  <button class="qty-btn qty-plus" type="button">+</button>
+                </div>
+                <button class="btn btn-primary btn-add-cart" type="button">Add to Order</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -273,56 +328,14 @@
             <span class="price-value">$15</span>
             <span class="price-unit">per bag</span>
           </div>
-          <a href="#contact" class="btn btn-outline-dark">Add to Order</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-images">
-          <div class="about-image-main"></div>
-          <div class="about-image-accent"></div>
-          <div class="about-experience">
-            <span class="exp-number">10+</span>
-            <span class="exp-text">Years of Experience</span>
-          </div>
-        </div>
-        <div class="about-content">
-          <p class="section-label">About Tom's Firewood</p>
-          <h2 class="section-title">Keeping South East Melbourne Warm Since 2015</h2>
-          <p class="about-text">What started as a bloke with a ute and a passion for a good fire has grown into South East Melbourne's most trusted firewood supplier. Tom's Firewood is a family-run business built on honest work, quality product, and reliable service.</p>
-          <p class="about-text">Every piece of wood we sell is hand-split, properly seasoned for a minimum of 12 months, and sourced from sustainable suppliers. We believe in doing things right — no green wood, no shortcuts, no worries.</p>
-          <div class="about-values">
-            <div class="value-item">
-              <div class="value-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="cart-add-controls kindling-controls" data-product="Kindling">
+            <div class="cart-qty-row">
+              <div class="qty-control">
+                <button class="qty-btn qty-minus" type="button">−</button>
+                <input type="number" class="qty-input" value="1" min="1" max="20">
+                <button class="qty-btn qty-plus" type="button">+</button>
               </div>
-              <div>
-                <h4>Sustainably Sourced</h4>
-                <p>All our wood comes from responsible, licensed suppliers</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              </div>
-              <div>
-                <h4>12+ Months Seasoned</h4>
-                <p>Properly dried for the best burn and heat output</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </div>
-              <div>
-                <h4>Customer First</h4>
-                <p>Friendly service with a genuine care for every customer</p>
-              </div>
+              <button class="btn btn-outline-dark btn-add-cart" type="button" data-size="Bag|15">Add to Order</button>
             </div>
           </div>
         </div>
@@ -613,24 +626,11 @@
               <input type="text" id="suburb" name="suburb" placeholder="Your suburb" required>
             </div>
             <div class="form-group">
-              <label for="wood-type">Type of Wood</label>
-              <select id="wood-type" name="wood-type" required>
-                <option value="" disabled selected>Select wood type</option>
-                <option value="redgum">Redgum</option>
-                <option value="ironbark">Ironbark</option>
-                <option value="mixed">Mixed Hardwood</option>
-                <option value="unsure">Not sure — need advice</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="quantity">Quantity</label>
-              <select id="quantity" name="quantity" required>
-                <option value="" disabled selected>Select quantity</option>
-                <option value="small">Small Load (~250kg)</option>
-                <option value="standard">Standard Load (~500kg)</option>
-                <option value="large">Large Load (~1 tonne)</option>
-                <option value="custom">Custom — let me specify</option>
-              </select>
+              <label>Your Order</label>
+              <div class="order-summary" id="order-summary">
+                <p class="order-empty">No items yet — <a href="#products">add firewood above</a></p>
+              </div>
+              <input type="hidden" id="order-data" name="order-details" value="">
             </div>
             <div class="form-group">
               <label for="message">Message (optional)</label>
@@ -643,6 +643,27 @@
       </div>
     </div>
   </section>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Order</h3>
+      <button class="cart-drawer-close" id="cart-drawer-close" type="button" aria-label="Close cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items">
+      <p class="cart-empty-msg">Your order is empty.</p>
+    </div>
+    <div class="cart-drawer-footer" id="cart-drawer-footer">
+      <div class="cart-total">
+        <span>Estimated Total:</span>
+        <span class="cart-total-value" id="cart-total-value">$0</span>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-full" id="cart-checkout-btn">Send Enquiry</a>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -660,7 +681,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Firewood</a></li>
-            <li><a href="#about">About</a></li>
+
             <li><a href="#delivery">Delivery Areas</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
