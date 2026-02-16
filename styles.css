@@ -552,53 +552,35 @@ ul {
 }
 
 .product-image {
-  height: 200px;
+  height: 220px;
   position: relative;
   overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .product-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, var(--color-bg-card));
+  background: linear-gradient(to bottom, transparent 30%, var(--color-bg-card));
   z-index: 2;
 }
 
 .product-image.redgum {
-  background: linear-gradient(145deg, #6B2A15 0%, #8B4726 40%, #5A2E1E 100%);
+  background: #6B2A15;
 }
 
 .product-image.ironbark {
-  background: linear-gradient(145deg, #24180F 0%, #3A281C 40%, #2E1F16 100%);
+  background: #24180F;
 }
 
 .product-image.mixed {
-  background: linear-gradient(145deg, #4A2A12 0%, #6B5118 40%, #503620 100%);
-}
-
-/* Wood grain texture */
-.product-image::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    85deg,
-    transparent,
-    transparent 4px,
-    rgba(255,255,255,0.02) 4px,
-    rgba(255,255,255,0.02) 8px
-  );
-  z-index: 1;
-}
-
-.product-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 30% 40%, rgba(255,200,100,0.06) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 60%, rgba(255,150,50,0.04) 0%, transparent 50%);
-  z-index: 1;
+  background: #4A2A12;
 }
 
 .product-info {
